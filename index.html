@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DMS Countdown</title>
+</head>
+<body>
+    <div id="img" class="img">
+        <img src="img/Logo_DMS.svg" alt="Logo_DMS" width="59" height="94">
+    </div>
+    <div id="comingsoon" class="comingsoon">    
+        <h1 data-text="comingsoon">COMING SOON...</h1></div>
+    <div id="web_name" class="web_name">    
+        <h1>DISTRIBUTION MANAGEMENT SYSTEM</h1>
+    </div>
+
+    <div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="day">00</h2>
+            <small>Days</small>
+        </div>      
+
+        <div class="time">
+            <h2 id="hour">00</h2>
+            <small>Hours</small>      
+        </div>
+
+        <div class="time">
+            <h2 id="minutes">00</h2>
+            <small>Minutes</small>      
+        </div>
+
+        <div class="time">
+            <h2 id="second">00</h2>
+            <small>Seconds</small>      
+        </div>
+    </div>
+
+    <script>
+        // Set the date to count down to (replace with your target date)
+        const targetDate = new Date('2023-12-31 23:59:59').getTime();
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            const currentDate = new Date().getTime();
+            const timeLeft = targetDate - currentDate;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').innerHTML = 'Countdown expired!';
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('day').innerText = days.toString().padStart(2, '0');
+                document.getElementById('hour').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('second').innerText = seconds.toString().padStart(2, '0');
+            }
+        }
+
+        // Initial call to display the countdown
+        updateCountdown();
+    </script>
+</body>
+</html>

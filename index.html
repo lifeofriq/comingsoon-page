@@ -5,42 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>DMS Countdown</title>
+    <link rel="icon" href="img/Logo_DMS.svg">
 </head>
 <body>
-    <div id="img" class="img">
-        <img src="img/Logo_DMS.svg" alt="Logo_DMS" width="59" height="94">
-    </div>
-    <div id="comingsoon" class="comingsoon">    
-        <h1 data-text="comingsoon">COMING SOON...</h1></div>
-    <div id="web_name" class="web_name">    
-        <h1>DISTRIBUTION MANAGEMENT SYSTEM</h1>
-    </div>
-
-    <div id="countdown" class="countdown">
-        <div class="time">
-            <h2 id="day">00</h2>
-            <small>Days</small>
-        </div>      
-
-        <div class="time">
-            <h2 id="hour">00</h2>
-            <small>Hours</small>      
+    <div class="container">
+        <div id="img" class="img">
+            <img src="img/Logo_DMS.svg" alt="Logo_DMS" width="59" height="94">
         </div>
-
-        <div class="time">
-            <h2 id="minutes">00</h2>
-            <small>Minutes</small>      
+        <div id="comingsoon" class="comingsoon">    
+            <h1 data-text="comingsoon">COMING SOON...</h1>
         </div>
-
-        <div class="time">
-            <h2 id="second">00</h2>
-            <small>Seconds</small>      
+        <div class="svg">
+            <img src="img/vector.svg" alt="Vector">
         </div>
     </div>
+
+    <div id="grad1">
+    <div class="two-column">
+        <div class="column-left">
+            <!-- Content for the left column -->
+            <!-- Add your content here -->
+        </div>
+        <div class="column-right">
+            <div class="container2">
+                <div id="web_name" class="web_name">    
+                    <h1>DISTRIBUTION MANAGEMENT SYSTEM</h1>
+                </div>
+    
+                <div id="countdown" class="countdown">
+                    <!-- Countdown timer content goes here -->
+                    <div id="countdown" class="countdown">
+            <div class="time">
+                <h2 id="day">00</h2>
+                <small>Days</small>    
+            </div>
+
+            <div class="time">
+                <h2 id="hour">00</h2>
+                <small>Hours</small>      
+            </div>
+
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>Minutes</small>      
+            </div>
+
+            <div class="time">
+                <h2 id="second">00</h2>
+                <small>Seconds</small>      
+            </div>    
+                    </div>
+                    <!-- Other countdown timer elements go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
 
     <script>
         // Set the date to count down to (replace with your target date)
-        const targetDate = new Date('2023-12-31 23:59:59').getTime();
+        const targetDate = new Date('2023-10-30 23:59:59').getTime();
 
         // Update the countdown every second
         const countdownInterval = setInterval(updateCountdown, 1000);

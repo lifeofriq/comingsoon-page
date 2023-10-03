@@ -3,7 +3,7 @@
 body{
     background-color: #E5F2F7;
     font-family: "Poppins", sans-serif;
-    height: 100vh;
+    height: flex;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -13,28 +13,27 @@ body{
 
 .img{    
     margin-left: 50px;
-    margin-top: 50px;
-    width: 59px;
-    height: 94px;
+    margin-top: 30px;
+    
     flex-shrink: 0;
 }
 
 .comingsoon{
     color: #2786AC;
     font-family: Poppins;
-    font-size: 50px;
+    font-size: 25px;
     font-style: normal;
-    margin-left: 100px;
-    margin-bottom: 51px;
-    margin-right: 400px;
+    margin-left: 50px;
+    margin-right: 300px;
     font-weight: 600;
-    line-height: 100px; /* 49.25px */
+    line-height: 50px; /* 49.25px */
     letter-spacing: 0.5px;
 }
 
 .svg {
-   width: 764px;
-    height: 764px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
 }
 
@@ -42,32 +41,33 @@ body{
     color: #FFF;
 text-align: right;
 font-family: Poppins;
-font-size: 40px;
+font-size: 25px;
 font-style: normal;
-margin-top: 180px;
+margin-top: 115px;
 margin-left: 31px;
 margin-left: 31px;
-margin-bottom: 229px;
-font-weight: 600;
-line-height: 100px; /* 39.4px */
+margin-bottom: 90px;
+font-weight: 15px;
+line-height: 50px; /* 39.4px */
 letter-spacing: 0.4px;
 }
 
 .container2 {
     margin-right: 50px;
     margin-left: 31px;
-    margin-top: 10px;
     text-align: right;
     align-content: end;
 }
 
 
 #countdown{
+    text-align: right;
     font-family: "Poppins", sans-serif;
     font-weight: SemiBold;
     color: #FFF;
     display: flex;
     transform: scale(2);
+    margin-bottom: 120px;
     
 }
 
@@ -75,6 +75,7 @@ letter-spacing: 0.4px;
 .time{
     display: flex;
     flex-direction: column;
+    text-align: right;
     align-items: center;
     justify-content: center;
     margin: 15px;

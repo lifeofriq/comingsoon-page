@@ -76,7 +76,7 @@ letter-spacing: 0.4px;
     display: flex;
     flex-direction: column;
     text-align: right;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     margin: 15px;
 }

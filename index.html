@@ -8,8 +8,7 @@
     <link rel="icon" href="img/Logo_DMS.svg">
 </head>
 <body>
-    <div class="container">
-        <br>
+    <div class="split left">
         <div id="img" class="img">
             <img src="img/Logo_DMS.svg" alt="Logo_DMS" width="35" height="44">
         </div>
@@ -17,56 +16,38 @@
             <h1 data-text="comingsoon">COMING SOON...</h1>
         </div>
         <div class="svg">
-            <img src="img/vector.svg" alt="Vector" width="300px" height="300px">
+            <img src="img/vector.svg" alt="Vector" width="500px" height="500px">
         </div>
     </div>
-
-    <div id="grad1">
-        <div class="two-column">
-            <div class="column-left">
-                <!-- Content for the left column -->
-                <!-- Add your content here -->
-            </div>
-            <div class="column-right">
-                <div class="container2">
-                    <div id="web_name" class="web_name">    
-                        <h1>DISTRIBUTION MANAGEMENT SYSTEM</h1>
-                    </div>
-
-                    <div id="desc" class="desc">
-                        <p>DMS atau Distributor Management System, sistem manajemen POS (point of sales) yang digunakan dalam bisnis untuk mengelola transaksi, stok produk, pembayaran dan cetak transaksi.</p>
-                    </div>
-                    
-                    <div id="countdown-container">
-                    <div id="countdown" class="countdown">
-                        <!-- Countdown timer content goes here -->
-                        <div class="time">
-                            <h2 id="day">00</h2>
-                            <small>Days</small>    
-                        </div>
-    
-                        <div class="time">
-                            <h2 id="hour">00</h2>
-                            <small>Hours</small>      
-                        </div>
-    
-                        <div class="time">
-                            <h2 id="minutes">00</h2>
-                            <small>Minutes</small>      
-                        </div>
-    
-                        <div class="time">
-                            <h2 id="second">00</h2>
-                            <small>Seconds</small>      
-                        </div>    
-                    </div>
+    <div class="split right">
+        <div id="web_name" class="web_name">    
+            <h1>DISTRIBUTION MANAGEMENT SYSTEM</h1>
+        </div>
+        <div id="desc" class="desc">
+            <p>DMS atau Distributor Management System, sistem manajemen POS (point of sales) yang digunakan dalam bisnis untuk mengelola transaksi, stok produk, pembayaran dan cetak transaksi.</p>
+        </div>
+        <div id="countdown-container">
+            <div id="countdown" class="countdown">
+                <!-- Countdown timer content goes here -->
+                <div class="time">
+                    <h2 id="day">00</h2>
+                    <small>Days</small>    
                 </div>
-                    <!-- Other countdown timer elements go here -->
+                <div class="time">
+                    <h2 id="hour">00</h2>
+                    <small>Hours</small>      
                 </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>Minutes</small>      
+                </div>
+                <div class="time">
+                    <h2 id="second">00</h2>
+                    <small>Seconds</small>      
+                </div>    
             </div>
         </div>
     </div>
-
     <script>
         // Set the date to count down to (replace with your target date)
         const targetDate = new Date('2023-12-03 09:59:59').getTime();
